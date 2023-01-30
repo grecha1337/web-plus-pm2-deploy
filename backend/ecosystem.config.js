@@ -1,5 +1,7 @@
 require('dotenv').config();
 
+console.log(require('dotenv').config());
+
 const {
   DEPLOY_USER, DEPLOY_HOST, DEPLOY_PATH, DEPLOY_REF = 'origin/master',
 } = process.env;
