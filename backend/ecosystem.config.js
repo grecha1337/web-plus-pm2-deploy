@@ -1,7 +1,4 @@
-const dotenv = require('dotenv');
-
-dotenv.config({ path: './.env' });
-console.log(require('dotenv').config());
+require('dotenv').config();
 
 const {
   DEPLOY_USER, DEPLOY_HOST, DEPLOY_PATH, DEPLOY_REF = 'origin/master',
