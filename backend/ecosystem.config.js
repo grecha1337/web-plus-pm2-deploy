@@ -16,6 +16,7 @@ module.exports = {
       user: DEPLOY_USER,
       host: DEPLOY_HOST,
       ref: DEPLOY_REF,
+      ssh_options: 'StrictHostKeyChecking=no',
       repo: 'https://github.com/grecha1337/web-plus-pm2-deploy',
       path: DEPLOY_PATH,
       'pre-deploy': `scp ./*.env ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
