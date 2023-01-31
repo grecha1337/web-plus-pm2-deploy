@@ -19,7 +19,7 @@ module.exports = {
       repo: 'https://github.com/grecha1337/web-plus-pm2-deploy',
       path: DEPLOY_PATH,
       'pre-deploy-local': `scp ./.env ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}/current/backend`,
-      'post-deploy': 'cd backend && npm i && npm run build && cd ./dist && pm2 delete --name "app-mesto" 2> /dev/null &&  pm2 start --name "app-mesto"',
+      'post-deploy': 'cd backend && npm i && npm run build && cd ./dist && pm2 start --name "app-mesto"',
     },
   },
 };
