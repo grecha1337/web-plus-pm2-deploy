@@ -18,7 +18,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: 'https://github.com/grecha1337/web-plus-pm2-deploy',
       path: DEPLOY_PATH,
-      'post-deploy': 'cd /web-plus-pm2-deploy/current/frontend && npm i && npm run build',
+      'post-deploy': 'cd ./web-plus-pm2-deploy/current/frontend && npm i && npm run build',
     },
   },
 };
