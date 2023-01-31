@@ -1,4 +1,4 @@
-const dotenv = require();
+const dotenv = require('dotenv');
 
 dotenv.config({ path: './.env.deploy' });
 
