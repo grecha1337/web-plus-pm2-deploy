@@ -23,4 +23,3 @@ module.exports = {
     },
   },
 };
-pm2 delete --name "app-mesto" 2> /dev/null &&  
